@@ -18,4 +18,19 @@ Phenotyping plays a crucial role in various domains like genetics and medical di
 - **Streamlit**: Provides a user-friendly UI for interacting with the Phenotype RAG system.
 - **Prefect**: Orchestration and automation of data ingestion processes.
 
+## LLMs Used
+
+- **gemma2-9b-it**: Used for question reformulation.
+- **mixtral-8x7b-32768**: Powers the retrieval-augmented generation (RAG) process, handling large text volumes to provide deeper contextual answers.
+- **all-MiniLM-L6-v2**: Employed for embedding generation and semantic search.
+- **Groq**: Integrated for vector search efficiency.
+- **Pinecone**: Handles vector storage and fast retrieval, supporting the system's search capabilities.
+
+
+
+
+
+
+
+
 
