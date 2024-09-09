@@ -3,6 +3,4 @@
 #
 ![app](https://github.com/user-attachments/assets/38ac1d64-2eaf-436a-8c9d-e7c3eec72fae)
 
-# Bio-Phenotype
-
 Project
