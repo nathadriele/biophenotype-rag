@@ -37,45 +37,44 @@ The project is organized into the following directories and files:
 
 ```py
 phenotype-rag/
-├── bio-phenotype/
-│   ├── data/
-│   │   └── bio-phenotype.csv       # Dataset containing phenotype-related questions and answers
-│   ├── sql/
-│   │   ├── .env                    # Environment variable file for database configuration
-│   │   └── create_table.py         # Script for creating PostgreSQL tables
-│   ├── tests/
-│   │   └── test.py                 # Test suite for validating code functionality
-│   ├── __init__.py                 # Package initialization file
-│   ├── main.py                     # Main application script for Streamlit interface
-│   ├── prefect_ingest.py           # Prefect workflow script for managing data ingestion
-│   ├── requirements.txt            # List of dependencies required for the project
-│   └── utils.py                    # Utility functions for common operations
-├── data/
-│   └── bio-phenotype.csv           # Same dataset as in the bio-phenotype/data folder
-├── grafana/
+├── bio-phenotype/                        # Root folder for the main application logic
+│   ├── data/                             # Directory to hold project-specific datasets 
+│   │   └── bio-phenotype.csv             # Main dataset: includes phenotype-related questions and answers
+│   ├── sql/                              # Directory for database management and schema scripts
+│   │   ├── .env                          # Environment file storing sensitive credentials database connection strings
+│   │   └── create_table.py               # Python script to automate the creation of tables in PostgreSQL
+│   ├── tests/                            # Directory for unit tests to ensure code quality and correctness
+│   │   └── test.py                       # Python script containing test cases for core functionalities of the project
+│   ├── __init__.py                       # Initializes the `bio-phenotype` package, making its modules importable across the project
+│   ├── main.py                           # Streamlit application entry point; defines the UI and handles user interaction
+│   ├── prefect_ingest.py                 # Prefect workflow script that automates data ingestion and processing tasks
+│   ├── requirements.txt                  # Lists Python dependencies needed to run the project (for pip-based installations)
+│   └── utils.py                          # Contains utility functions for data processing, I/O operations, and common tasks
+├── data/                                 # Contains raw data files that can be accessed across different components
+│   └── bio-phenotype.csv                 # Same dataset as in `bio-phenotype/data`, accessible for testing and backup
+├── grafana/                              # Directory for Grafana monitoring setup
 │   └── monitoring/
-│       ├── docker-compose.yaml     # Docker setup for Grafana monitoring
-│       └── grafana_datasources.yaml # Grafana data source configuration
-├── images/
-│   ├── app.png                     # Screenshot of the Streamlit app interface
-│   └── grafana.png                 # Screenshot of Grafana dashboard with performance metrics
-├── notebook/
-│   ├── .env                        # Environment variables for the Jupyter notebook
-│   └── vector_Indexing_.ipynb      # Notebook for vector indexing and semantic search
-├── docker-compose.yaml             # Docker Compose file for setting up the project environment
-├── prefect_ingest.py               # Same Prefect ingestion script as in bio-phenotype folder
-├── README.md                       # Project documentation
-├── requirements.txt                # Python dependencies for the entire project
-└── test.py                         # General test suite
+│       ├── docker-compose.yaml           # Docker Compose configuration for setting up Grafana
+│       └── grafana_datasources.yaml      # Configuration file that defines the data sources Grafana will connect to PostgreSQL
+├── images/                               # Directory for storing project-related images and screenshots
+│   ├── app.png                           # Screenshot of the Streamlit app's interface
+│   └── grafana.png                       # Screenshot of the Grafana monitoring dashboard, displaying key metrics
+├── notebook/                             # Directory containing Jupyter notebooks for exploratory data analysis (EDA) and model experimentation
+│   ├── .env                              # Environment file specifically for notebook-related configurations (API keys, credentials)
+│   └── vector_Indexing_.ipynb            # Notebook for vectorizing data and indexing it into the semantic search system (Pinecone)
+├── docker-compose.yaml                   # Primary Docker Compose file to orchestrate multi-container setups, including app, database, and Grafana
+├── prefect_ingest.py                     # Duplicate of the workflow orchestration script (kept in the root for easier access during testing)
+├── README.md                             # Project documentation with detailed instructions on usage, setup, and project purpose
+├── requirements.txt                      # Python dependencies for the entire project (ensuring the environment is consistent across machines)
+└── test.py                               # Standalone test script covering various components, including ingestion, database interactions, and the API
 ```
 
 ## 🧬 Dataset
 The dataset used for this project contains questions and answers about phenotypes, focusing on topics such as genetic research, evolutionary biology and medical diagnostics.
 
-**Sample Questions:**
-- "What is the definition of a phenotype?"
-- "How do phenotypes relate to genetic research?"
-- "What is the significance of phenotyping in evolutionary biology?"
+**Some Questions and Answers:**
+
+![image](https://github.com/user-attachments/assets/1a8377cb-0b88-4028-accd-e31811ed2307)
 
 ## 🧬 Project Execution Locally
 ### ⚗️ Pre-requisites
@@ -115,18 +114,36 @@ jupyter notebook
 ```
 
 ## 🧬 Running the Application
-To run the application, you'll need access keys for GroqCloud and Pinecone, as well as a Pinecone Index setup. Follow the instructions below:
+To run the application, you will need access keys (API Key) for both GroqCloud and Pinecone. You will create and substitute them, as well as create an Index in Pinecone. You will need accounts on both platforms.
 
-1. Obtain API keys from GroqCloud and Pinecone.
-2. Set up an index in Pinecone with the following configuration:
+### Step 1: Create API Key on GroqCloud
+- Create or log into your GroqCloud account and navigate to **API Keys > Create API Key**.
+- Copy and save the **Key** in a text editor for later use.
 
-- Dimensions: 384
-- Metric: Cosine
-- Capacity Mode: Serverless
-- Cloud Provider: AWS (Region: us-east-1)
-3. Add your API keys to the .env files in the notebook and lang-bio-groq folders.
-4. To launch the app locally:
-  
+### Step 2: Create an Index on Pinecone
+- On the Pinecone website, go to Indexes > Create Index.
+- Configure the index as follows:
+   - Default / bio
+   - Dimensions: 384
+   - Metric: Cosine
+   - Capacity mode: Serverless
+   - Cloud provider: AWS
+   - Region: Virginia | us-east-1
+- Complete the setup by clicking on Create Index.
+
+**Note**: The region can be changed without significantly affecting the code. However, altering other configurations would require significant code adjustments.
+
+### Step 3: Add the API Keys to Environment Files
+After completing the previous steps, add your API keys to the `.env` files in the `notebook` and `lang-bio-groq` folders, as shown below:
+
+![image](https://github.com/user-attachments/assets/0acae8c7-6f60-4c20-bc5e-b987074e9d85)
+
+Make sure to replace `your-pinecone-api-key` and `your-groqcloud-api-key` with the actual keys you generated earlier.
+
+### Step 4: Running the Application Locally
+To run the application locally, you may need to adjust the configurations in the .env file to match your environment. This also applies to the Grafana setup parameters shown below.
+ -In the Anaconda Prompt, ensure you are in the lang-bio-groq folder and run the following command:
+
 ```py
 streamlit run main.py
 ```
