@@ -26,8 +26,13 @@ Phenotyping plays a crucial role in various domains like genetics and medical di
 - **Groq**: Integrated for vector search efficiency.
 - **Pinecone**: Handles vector storage and fast retrieval, supporting the system's search capabilities.
 
+### Other Tools Used for Development
 
-
+- **Pytest**: For unit testing.
+- **Git**: Version control.
+- **Visual Studio Code**: Development environment.
+- **Jupyter Notebook**: For data exploration and vector indexing.
+- **PostgreSQL**: Database management for storing and retrieving structured data.
 
 
 
