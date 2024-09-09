@@ -74,7 +74,7 @@ The dataset used for this project contains questions and answers about phenotype
 
 **Some Questions and Answers:**
 
-![image](https://github.com/user-attachments/assets/1a8377cb-0b88-4028-accd-e31811ed2307)
+![image](https://github.com/user-attachments/assets/9340d71a-9c3f-4013-9931-f8c904f0ed7a)
 
 ## 🧬 Project Execution Locally
 ### ⚗️ Pre-requisites
