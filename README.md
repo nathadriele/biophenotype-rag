@@ -34,8 +34,24 @@ Phenotyping plays a crucial role in various domains like genetics and medical di
 - **Jupyter Notebook**: For data exploration and vector indexing.
 - **PostgreSQL**: Database management for storing and retrieving structured data.
 
+## Dataset
+The dataset used for this project contains questions and answers about phenotypes, focusing on topics such as genetic research, evolutionary biology and medical diagnostics.
 
+**Sample Questions:**
 
+- "What is the definition of a phenotype?"
+- "How do phenotypes relate to genetic research?"
+- "What is the significance of phenotyping in evolutionary biology?"
 
+## Project Execution Locally
 
+### Pre-requisites
+Ensure the following are installed on your machine:
+
+- Anaconda (latest version)
+- Python (version 3.10 or later)
+- PostgreSQL (latest version)
+- Grafana (latest version)
+
+### Environment Setup
 
