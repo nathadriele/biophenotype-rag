@@ -117,10 +117,16 @@ jupyter notebook
 To run the application, you will need access keys (API Key) for both GroqCloud and Pinecone. You will create and substitute them, as well as create an Index in Pinecone. You will need accounts on both platforms.
 
 ### Step 1: Create API Key on GroqCloud
+
+![gloq](https://github.com/user-attachments/assets/474b3dbc-54d9-4965-ad54-6d505e77ddb2)
+
 - Create or log into your GroqCloud account and navigate to **API Keys > Create API Key**.
 - Copy and save the **Key** in a text editor for later use.
 
 ### Step 2: Create an Index on Pinecone
+
+![pinecone](https://github.com/user-attachments/assets/68ccc4a9-0e0e-4209-a96e-f76448cc98ba)
+
 - On the Pinecone website, go to Indexes > Create Index.
 - Configure the index as follows:
    - Default / bio
