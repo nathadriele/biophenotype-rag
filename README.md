@@ -155,10 +155,12 @@ streamlit run main.py
 ```
 
 ## 🧬 Monitoring
-Grafana is used to monitor the performance of the system. The grafana.png image shows the dashboard setup with at least five charts for key performance metrics.
+![grafana](https://github.com/user-attachments/assets/8027f204-6112-4cb5-99f0-f2cf07a039a1)
+
+Grafana is used to monitor performance. The image shows the dashboard configuration with the integrated charts for key performance metrics.
 
 ## More Information
-Final Consideration: This project was developed as the final assignment for the LLM Zoomcamp course.
+This project was developed as the final assignment for the LLM Zoomcamp course.
 
 
 
