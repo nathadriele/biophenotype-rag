@@ -81,10 +81,27 @@ jupyter notebook
 ```
 
 ## 🧬 Running the Application
-
 To run the application, you'll need access keys for GroqCloud and Pinecone, as well as a Pinecone Index setup. Follow the instructions below:
 
+1. Obtain API keys from GroqCloud and Pinecone.
+2. Set up an index in Pinecone with the following configuration:
 
+- Dimensions: 384
+- Metric: Cosine
+- Capacity Mode: Serverless
+- Cloud Provider: AWS (Region: us-east-1)
+3. Add your API keys to the .env files in the notebook and lang-bio-groq folders.
+4. To launch the app locally:
+  
+```py
+streamlit run main.py
+```
+
+## 🧬 Monitoring
+Grafana is used to monitor the performance of the system. The grafana.png image shows the dashboard setup with at least five charts for key performance metrics.
+
+## More Information
+Final Consideration: This project was developed as the final assignment for the LLM Zoomcamp course.
 
 
 
