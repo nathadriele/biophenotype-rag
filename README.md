@@ -3,9 +3,19 @@
 #
 ![app](https://github.com/user-attachments/assets/38ac1d64-2eaf-436a-8c9d-e7c3eec72fae)
 
-### Project Overview
+## Project Overview
 This project, Phenotype RAG, was developed as the final assignment for the LLM Zoomcamp. It implements a Retrieval-Augmented Generation (RAG) system that intelligently answers questions related to phenotypes by utilizing both a knowledge base and large language models (LLMs). The system is designed to assist with queries about phenotypes in fields such as genetics, evolutionary biology and medical diagnostics.
 
-### Problem Description
+## Problem Description
 Phenotyping plays a crucial role in various domains like genetics and medical diagnostics, helping researchers and clinicians understand the observable traits influenced by genetic and environmental factors. However, accessing and retrieving this knowledge can be challenging due to the vast amounts of data involved. This project aims to bridge this gap by building an intelligent assistant capable of answering complex phenotype-related queries using RAG techniques, combining the power of LLMs and a knowledge base.
+
+## Technologies and Tools Used
+### Key Technologies
+
+- **Anaconda**: For environment management and package handling.
+- **Docker**: Containerization of the entire application, ensuring consistency across different systems.
+- **Grafana**: Used for monitoring with a customized dashboard displaying performance metrics.
+- **Streamlit**: Provides a user-friendly UI for interacting with the Phenotype RAG system.
+- **Prefect**: Orchestration and automation of data ingestion processes.
+
 
