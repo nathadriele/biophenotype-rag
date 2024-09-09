@@ -12,11 +12,11 @@ Phenotyping plays a crucial role in various domains like genetics and medical di
 ## 🧬 Technologies and Tools Used
 ### ⚗️ Key Technologies
 
-- **Anaconda**: For environment management and package handling.
-- **Docker**: Containerization of the entire application, ensuring consistency across different systems.
-- **Grafana**: Used for monitoring with a customized dashboard displaying performance metrics.
-- **Streamlit**: Provides a user-friendly UI for interacting with the Phenotype RAG system.
-- **Prefect**: Orchestration and automation of data ingestion processes.
+- **Anaconda**: Used for managing dependencies and environment configurations.
+- **Docker**: Containerizes the application for easy deployment and consistent execution across different platforms.
+- **Grafana**: Provides monitoring and visualization dashboards to track application performance and usage metrics.
+- **Streamlit**: Offers a user-friendly interface for interacting with the Phenotype RAG system.
+- **Prefect**: Orchestrates data ingestion workflows to ensure smooth and automated processes.
 
 ## 🧬 LLMs Used
 
