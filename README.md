@@ -19,7 +19,6 @@ Phenotyping plays a crucial role in various domains like genetics and medical di
 - **Prefect**: Orchestrates data ingestion workflows to ensure smooth and automated processes.
 
 ## 🧬 LLMs Used
-
 - **gemma2-9b-it**: Utilized for question reformulation, optimizing queries for better understanding.
 - **mixtral-8x7b-32768**: Powers the retrieval-augmented generation by processing large volumes of text and delivering more contextually accurate answers.
 - **all-MiniLM-L6-v2**: Handles embedding generation and semantic search, allowing for precise query-to-answer matching.
@@ -27,18 +26,53 @@ Phenotyping plays a crucial role in various domains like genetics and medical di
 - **Pinecone**: Manages vector indexing and provides fast, scalable retrieval of information using semantic search.
 
 ### ⚗️ Other Tools Used for Development
+- **Pytest**: Ensures code reliability through unit and integration tests.
+- **Git**: Version control for tracking changes and collaboration.
+- **Visual Studio Code**: Integrated development environment (IDE) for writing and debugging code.
+- **Jupyter Notebook**: Facilitates exploratory data analysis and preprocessing through interactive notebooks.
+- **PostgreSQL**: Relational database used for storing and querying structured data.
 
-- **Pytest**: For unit testing.
-- **Git**: Version control.
-- **Visual Studio Code**: Development environment.
-- **Jupyter Notebook**: For data exploration and vector indexing.
-- **PostgreSQL**: Database management for storing and retrieving structured data.
+## 🧬 Project Structure
+The project is organized into the following directories and files:
+
+```py
+phenotype-rag/
+├── bio-phenotype/
+│   ├── data/
+│   │   └── bio-phenotype.csv       # Dataset containing phenotype-related questions and answers
+│   ├── sql/
+│   │   ├── .env                    # Environment variable file for database configuration
+│   │   └── create_table.py         # Script for creating PostgreSQL tables
+│   ├── tests/
+│   │   └── test.py                 # Test suite for validating code functionality
+│   ├── __init__.py                 # Package initialization file
+│   ├── main.py                     # Main application script for Streamlit interface
+│   ├── prefect_ingest.py           # Prefect workflow script for managing data ingestion
+│   ├── requirements.txt            # List of dependencies required for the project
+│   └── utils.py                    # Utility functions for common operations
+├── data/
+│   └── bio-phenotype.csv           # Same dataset as in the bio-phenotype/data folder
+├── grafana/
+│   └── monitoring/
+│       ├── docker-compose.yaml     # Docker setup for Grafana monitoring
+│       └── grafana_datasources.yaml # Grafana data source configuration
+├── images/
+│   ├── app.png                     # Screenshot of the Streamlit app interface
+│   └── grafana.png                 # Screenshot of Grafana dashboard with performance metrics
+├── notebook/
+│   ├── .env                        # Environment variables for the Jupyter notebook
+│   └── vector_Indexing_.ipynb      # Notebook for vector indexing and semantic search
+├── docker-compose.yaml             # Docker Compose file for setting up the project environment
+├── prefect_ingest.py               # Same Prefect ingestion script as in bio-phenotype folder
+├── README.md                       # Project documentation
+├── requirements.txt                # Python dependencies for the entire project
+└── test.py                         # General test suite
+```
 
 ## 🧬 Dataset
 The dataset used for this project contains questions and answers about phenotypes, focusing on topics such as genetic research, evolutionary biology and medical diagnostics.
 
 **Sample Questions:**
-
 - "What is the definition of a phenotype?"
 - "How do phenotypes relate to genetic research?"
 - "What is the significance of phenotyping in evolutionary biology?"
