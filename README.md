@@ -4,10 +4,10 @@
 ![app](https://github.com/user-attachments/assets/38ac1d64-2eaf-436a-8c9d-e7c3eec72fae)
 
 ## 🧬 Project Overview 
-This project, Phenotype RAG, was developed as the final assignment for the LLM Zoomcamp. It implements a Retrieval-Augmented Generation (RAG) system that intelligently answers questions related to phenotypes by utilizing both a knowledge base and large language models (LLMs). The system is designed to assist with queries about phenotypes in fields such as genetics, evolutionary biology and medical diagnostics. 
+This project, Phenotype RAG, was developed as the final assignment for the LLM Zoomcamp. It implements a Retrieval-Augmented Generation (RAG) system that intelligently answers questions related to phenotypes by utilizing both a knowledge base and large language models (LLMs). The system is designed to assist with queries about phenotypes in fields such as genetics, evolutionary biology, and medical diagnostics. By integrating retrieval and generation capabilities, the project provides precise and contextually accurate information, making it a powerful tool for phenotype-related research and clinical applications.
 
 ## 🧬 Problem Description
-Phenotyping plays a crucial role in various domains like genetics and medical diagnostics, helping researchers and clinicians understand the observable traits influenced by genetic and environmental factors. However, accessing and retrieving this knowledge can be challenging due to the vast amounts of data involved. This project aims to bridge this gap by building an intelligent assistant capable of answering complex phenotype-related queries using RAG techniques, combining the power of LLMs and a knowledge base.
+Phenotyping plays a crucial role in various domains like genetics, evolutionary biology, and medical diagnostics, helping researchers and clinicians understand the observable traits influenced by genetic and environmental factors. However, the complexity and vastness of phenotype data make it challenging to access and retrieve relevant information efficiently. This project addresses the challenge by developing an intelligent assistant capable of answering complex phenotype-related queries. By leveraging RAG techniques, the system combines the reasoning ability of LLMs with the precision of a curated knowledge base, making the retrieval of phenotype information more accessible and accurate for researchers, healthcare professionals, and educators.
 
 ## 🧬 Technologies and Tools Used
 ### ⚗️ Key Technologies
@@ -70,7 +70,7 @@ phenotype-rag/
 ```
 
 ## 🧬 Dataset
-The dataset used for this project contains questions and answers about phenotypes, focusing on topics such as genetic research, evolutionary biology and medical diagnostics.
+The dataset used for this project contains questions and answers about phenotypes, with a focus on genetic research, evolutionary biology, and medical diagnostics. It explores how phenotypic traits relate to cognitive function, disease susceptibility, and treatment outcomes, highlighting the role of phenotyping in personalized medicine. The dataset also covers the impact of traits on aging, chronic diseases, and mental health disorders. Phenotypic trait analysis is crucial in understanding genetic predispositions, environmental adaptations, and evolutionary processes. This resource supports the development of diagnostic tools, therapeutic strategies, and health interventions by linking observable traits to genetic and environmental factors. Additionally, it is valuable for research in agricultural phenotypes, such as plant growth and disease resistance.
 
 **Some Questions and Answers:**
 
@@ -107,14 +107,14 @@ pip install -r requirements.txt
 ```
 
 ## 🧬 Data Exploration and Preprocessing
-- Start the vector_Indexing_.ipynb notebook with Jupyter:
+- Start the `vector_Indexing_.ipynb` notebook with **Jupyter**:
   
 ```py
 jupyter notebook
 ```
 
 ## 🧬 Running the Application
-To run the application, you will need access keys (API Key) for both GroqCloud and Pinecone. You will create and substitute them, as well as create an Index in Pinecone. You will need accounts on both platforms.
+To run the application, you will need access keys (API Key) for both **GroqCloud** and **Pinecone**. You will create and substitute them, as well as create an Index in **Pinecone**. You will need accounts on both platforms.
 
 ### Step 1: Create API Key on GroqCloud
 
@@ -127,15 +127,15 @@ To run the application, you will need access keys (API Key) for both GroqCloud a
 
 ![pinecone](https://github.com/user-attachments/assets/68ccc4a9-0e0e-4209-a96e-f76448cc98ba)
 
-- On the Pinecone website, go to Indexes > Create Index.
+- On the **Pinecone** website, go to **Indexes > Create Index**.
 - Configure the index as follows:
    - Default / bio
-   - Dimensions: 384
-   - Metric: Cosine
-   - Capacity mode: Serverless
-   - Cloud provider: AWS
-   - Region: Virginia | us-east-1
-- Complete the setup by clicking on Create Index.
+   - **Dimensions**: 384
+   - **Metric**: Cosine
+   - **Capacity mode**: Serverless
+   - **Cloud provider**: AWS
+   - **Region**: Virginia | us-east-1
+- Complete the setup by clicking on **Create Index**.
 
 **Note**: The region can be changed without significantly affecting the code. However, altering other configurations would require significant code adjustments.
 
@@ -148,7 +148,8 @@ Make sure to replace `your-pinecone-api-key` and `your-groqcloud-api-key` with t
 
 ### Step 4: Running the Application Locally
 To run the application locally, you may need to adjust the configurations in the .env file to match your environment. This also applies to the Grafana setup parameters shown below.
- -In the Anaconda Prompt, ensure you are in the lang-bio-groq folder and run the following command:
+
+- In the **Anaconda Prompt**, ensure you are in the `lang-bio-groq` folder and run the following command:
 
 ```py
 streamlit run main.py
@@ -157,10 +158,10 @@ streamlit run main.py
 ## 🧬 Monitoring
 ![grafana](https://github.com/user-attachments/assets/8027f204-6112-4cb5-99f0-f2cf07a039a1)
 
-Grafana is used to monitor performance. The image shows the dashboard configuration with the integrated charts for key performance metrics.
+**Grafana** is used to monitor performance. The image shows the dashboard configuration with the integrated charts for key performance metrics.
 
 ## More Information
-This project was developed as the final assignment for the LLM Zoomcamp course.
+This project was developed as the final assignment for the **LLM Zoomcamp** course.
 
 
 
