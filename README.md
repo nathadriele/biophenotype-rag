@@ -44,7 +44,6 @@ The dataset used for this project contains questions and answers about phenotype
 - "What is the significance of phenotyping in evolutionary biology?"
 
 ## Project Execution Locally
-
 ### Pre-requisites
 Ensure the following are installed on your machine:
 
@@ -54,4 +53,38 @@ Ensure the following are installed on your machine:
 - Grafana (latest version)
 
 ### Environment Setup
+1. Clone the repository:
+   
+```py
+git clone https://github.com/nathadriele/biophenotype-rag.git
+cd bio-phenotype
+```
+
+2. Create and activate the virtual environment:
+   
+```py
+conda create -n bio-phenotype python=3.10
+conda activate bio-phenotype
+```
+
+3. Install dependencies:
+   
+```py
+pip install -r requirements.txt
+```
+
+## Data Exploration and Preprocessing
+- Start the vector_Indexing_.ipynb notebook with Jupyter:
+  
+```py
+jupyter notebook
+```
+
+## Running the Application
+
+To run the application, you'll need access keys for GroqCloud and Pinecone, as well as a Pinecone Index setup. Follow the instructions below:
+
+
+
+
 
