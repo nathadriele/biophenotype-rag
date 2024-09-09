@@ -20,11 +20,11 @@ Phenotyping plays a crucial role in various domains like genetics and medical di
 
 ## 🧬 LLMs Used
 
-- **gemma2-9b-it**: Used for question reformulation.
-- **mixtral-8x7b-32768**: Powers the retrieval-augmented generation (RAG) process, handling large text volumes to provide deeper contextual answers.
-- **all-MiniLM-L6-v2**: Employed for embedding generation and semantic search.
-- **Groq**: Integrated for vector search efficiency.
-- **Pinecone**: Handles vector storage and fast retrieval, supporting the system's search capabilities.
+- **gemma2-9b-it**: Utilized for question reformulation, optimizing queries for better understanding.
+- **mixtral-8x7b-32768**: Powers the retrieval-augmented generation by processing large volumes of text and delivering more contextually accurate answers.
+- **all-MiniLM-L6-v2**: Handles embedding generation and semantic search, allowing for precise query-to-answer matching.
+- **Groq**: Integrates with the system for efficient vector processing during the search phase.
+- **Pinecone**: Manages vector indexing and provides fast, scalable retrieval of information using semantic search.
 
 ### ⚗️ Other Tools Used for Development
 
