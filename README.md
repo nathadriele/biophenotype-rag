@@ -9,6 +9,14 @@ This project, **Phenotype RAG**, was developed as the final assignment for the L
 ## 🧬 Problem Description
 Phenotyping plays a crucial role in various domains like genetics, evolutionary biology, and medical diagnostics, helping researchers and clinicians understand the observable traits influenced by genetic and environmental factors. However, the complexity and vastness of phenotype data make it challenging to access and retrieve relevant information efficiently. This project addresses the challenge by developing an intelligent assistant capable of answering complex phenotype-related queries. By leveraging RAG techniques, the system combines the reasoning ability of LLMs with the precision of a curated knowledge base, making the retrieval of phenotype information more accessible and accurate for researchers, healthcare professionals, and educators.
 
+## 🧬 Project Objectives
+The **Phenotype RAG** project aims to achieve the following objectives:
+- **1. Enhance Data Retrieval**: Implement a Retrieval-Augmented Generation (RAG) system to efficiently access and retrieve accurate information about phenotypes from a comprehensive knowledge base.
+- **2. Improve Query Accuracy**: Utilize advanced language models to reformulate and optimize queries, ensuring that the answers provided are contextually relevant and precise.
+- **3. Offer Educational Value**: Create an accessible platform for students and professionals to learn about phenotyping, improving their grasp of complex concepts through a user-friendly interface.
+- **4. Ensure Scalability and Flexibility**: Develop a system with a flexible architecture that can integrate with various tools and adapt to different research needs, promoting scalability and adaptability in diverse applications.
+- **5. Foster Collaboration**: Make the project's code and documentation available to the community, encouraging collaborative development and knowledge sharing to advance the field.
+
 ## 🧬 Technologies and Tools Used
 ### ⚗️ Key Technologies
 
@@ -160,8 +168,8 @@ streamlit run main.py
 
 **Grafana** is used to monitor performance. The image shows the dashboard configuration with the integrated charts for key performance metrics.
 
+## 🧬 Contribution of the Phenotype RAG Application
+The Phenotype RAG enhances research and practice in genetics and medical diagnostics by integrating retrieval and generation of phenotype information. It facilitates efficient access to complex data, supports accurate diagnostics, and provides a valuable educational tool. With flexible architecture, the application improves interaction with large volumes of data and fosters innovation through a collaborative and accessible approach for the community.
+
 ## More Information
 This project was developed as the final assignment for the **LLM Zoomcamp** course.
-
-
-
