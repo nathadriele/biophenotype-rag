@@ -13,29 +13,28 @@ services:
     restart: always
     environment:
       POSTGRES_PASSWORD: 3099
-    ports: 
+    ports:
       - "5432:5432"
     networks:
-      - back-tier 
+      - back-tier
 
   adminer:
     image: adminer
-    restart: always 
+    restart: always
     ports: 
       - "8080:8080"
     networks:
-      - back-tier 
-      - front-tier 
+      - back-tier
+      - front-tier
 
   grafana:
-    image: grafana/grafana 
+    image: grafana/grafana
     user: "472"
     ports: 
       - "3000:3000"
     volumes: 
       - ./config/grafana_datasources.yaml:/etc/grafana/provisioning/datasources/datasource.yaml:ro
     networks:
-      - back-tier 
-      - front-tier 
+      - back-tier
+      - front-tier
     restart: always
-

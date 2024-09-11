@@ -7,8 +7,8 @@ def get_bio_db_connection():
         dbname='your_dbname',
         user='your_user',
         password='your_password',
-        host='localhost',  
-        port='5432'        
+        host='localhost',
+        port='5432'
     )
     return conn
 
@@ -22,8 +22,8 @@ def extract_data():
 
 @task
 def transform_data(df):
-    df['question'] = df['question'].str.strip()  
-    df['response'] = df['response'].str.strip()  
+    df['question'] = df['question'].str.strip()
+    df['response'] = df['response'].str.strip()
     return df
 
 @task
