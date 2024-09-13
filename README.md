@@ -77,11 +77,10 @@ phenotype-rag/
 └── test.py                               # Standalone test script covering various components, including ingestion, database interactions, and the API
 ```
 
-## 🧬 Dataset
+## 🧬 Phenotype Dataset
 The dataset used for this project contains questions and answers about phenotypes, with a focus on genetic research, evolutionary biology, and medical diagnostics. It explores how phenotypic traits relate to cognitive function, disease susceptibility, and treatment outcomes, highlighting the role of phenotyping in personalized medicine. The dataset also covers the impact of traits on aging, chronic diseases, and mental health disorders. Phenotypic trait analysis is crucial in understanding genetic predispositions, environmental adaptations, and evolutionary processes. This resource supports the development of diagnostic tools, therapeutic strategies, and health interventions by linking observable traits to genetic and environmental factors. Additionally, it is valuable for research in agricultural phenotypes, such as plant growth and disease resistance.
 
-**Some Questions and Answers:**
-
+### Some Questions and Answers: 
 ![image](https://github.com/user-attachments/assets/9340d71a-9c3f-4013-9931-f8c904f0ed7a)
 
 ## 🧬 Project Execution Locally
@@ -128,7 +127,7 @@ To run the application, you will need access keys (API Key) for both **GroqCloud
 
 ![gloq](https://github.com/user-attachments/assets/474b3dbc-54d9-4965-ad54-6d505e77ddb2)
 
-- Create or log into your GroqCloud account and navigate to **API Keys > Create API Key**.
+- Create or log into your **GroqCloud** account and navigate to **API Keys > Create API Key**.
 - Copy and save the **Key** in a text editor for later use.
 
 ### Step 2: Create an Index on Pinecone
@@ -163,15 +162,15 @@ To run the application locally, you may need to adjust the configurations in the
 streamlit run main.py
 ```
 
-## 🧬 Monitoring
+## 🧬 Monitoring and Performance Metrics
 ![grafana](https://github.com/user-attachments/assets/8027f204-6112-4cb5-99f0-f2cf07a039a1)
 
-**Grafana** is used to monitor performance, and the image displays a dashboard configured with key performance metrics:
+**Grafana** is used to monitor performance, and the image displays a dashboard configured with key performance metrics. In this example, it is evident:
 
 - **Average Response Time**: The current average response time, which is tracked in real-time to ensure system responsiveness.
 - **Record Count by Month**: This chart tracks the number of records entered into the system.
 - **Total Conversations**: The gauge shows a total of conversations monitored, with the status represented in green, indicating acceptable levels.
-   **Distribution of Questions and Answers**: The average question length, and the average response length is significantly higher, at 161 characters. This highlights the tendency for longer responses compared to the questions.
+- **Distribution of Questions and Answers**: The average question length, and the average response length is significantly higher, at 161 characters. This highlights the tendency for longer responses compared to the questions.
 
 
 ## 🧬 Contribution of the Phenotype RAG Application
