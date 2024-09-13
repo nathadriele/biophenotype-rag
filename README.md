@@ -169,6 +169,9 @@ streamlit run main.py
 **Grafana** is used to monitor performance, and the image displays a dashboard configured with key performance metrics:
 
 - **Average Response Time**: The current average response time, which is tracked in real-time to ensure system responsiveness.
+- **Record Count by Month**: This chart tracks the number of records entered into the system.
+- **Total Conversations**: The gauge shows a total of conversations monitored, with the status represented in green, indicating acceptable levels.
+   **Distribution of Questions and Answers**: The average question length, and the average response length is significantly higher, at 161 characters. This highlights the tendency for longer responses compared to the questions.
 
 
 ## 🧬 Contribution of the Phenotype RAG Application
