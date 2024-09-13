@@ -166,7 +166,10 @@ streamlit run main.py
 ## 🧬 Monitoring
 ![grafana](https://github.com/user-attachments/assets/8027f204-6112-4cb5-99f0-f2cf07a039a1)
 
-**Grafana** is used to monitor performance. The image shows the dashboard configuration with the integrated charts for key performance metrics.
+**Grafana** is used to monitor performance, and the image displays a dashboard configured with key performance metrics:
+
+- **Average Response Time**: The current average response time, which is tracked in real-time to ensure system responsiveness.
+
 
 ## 🧬 Contribution of the Phenotype RAG Application
 The Phenotype RAG enhances research and practice in genetics and medical diagnostics by integrating retrieval and generation of phenotype information. It facilitates efficient access to complex data, supports accurate diagnostics, and provides a valuable educational tool. With flexible architecture, the application improves interaction with large volumes of data and fosters innovation through a collaborative and accessible approach for the community.
