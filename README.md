@@ -23,7 +23,7 @@ The **Phenotype RAG** project aims to achieve the following objectives:
 - **Anaconda**: Used for managing dependencies and environment configurations.
 - **Docker**: Containerizes the application for easy deployment and consistent execution across different platforms.
 - **Grafana**: Provides monitoring and visualization dashboards to track application performance and usage metrics.
-- **Streamlit**: Offers a user-friendly interface for interacting with the Phenotype RAG system.
+- **Streamlit**: Offers a user-friendly interface for interacting with the **Phenotype RAG** system.
 - **Prefect**: Orchestrates data ingestion workflows to ensure smooth and automated processes.
 
 ## 🧬 LLMs Used
@@ -127,8 +127,8 @@ To run the application, you will need access keys (API Key) for both **GroqCloud
 
 ![gloq](https://github.com/user-attachments/assets/474b3dbc-54d9-4965-ad54-6d505e77ddb2)
 
-- Create or log into your **GroqCloud** account and navigate to **API Keys > Create API Key**.
-- Copy and save the **Key** in a text editor for later use.
+- Create or log into your **GroqCloud** account and navigate to **`API Keys` > `Create API Key`**.
+- Copy and save the **`Key`** in a text editor for later use.
 
 ### Step 2: Create an Index on Pinecone
 
@@ -174,7 +174,7 @@ streamlit run main.py
 
 
 ## 🧬 Contribution of the Phenotype RAG Application
-The Phenotype RAG enhances research and practice in genetics and medical diagnostics by integrating retrieval and generation of phenotype information. It facilitates efficient access to complex data, supports accurate diagnostics, and provides a valuable educational tool. With flexible architecture, the application improves interaction with large volumes of data and fosters innovation through a collaborative and accessible approach for the community.
+The **Phenotype RAG** enhances research and practice in genetics and medical diagnostics by integrating retrieval and generation of phenotype information. It facilitates efficient access to complex data, supports accurate diagnostics, and provides a valuable educational tool. With flexible architecture, the application improves interaction with large volumes of data and fosters innovation through a collaborative and accessible approach for the community.
 
 ## More Information
 This project was developed as the final assignment for the **LLM Zoomcamp** course.
