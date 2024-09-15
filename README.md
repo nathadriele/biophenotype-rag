@@ -76,7 +76,6 @@ phenotype-rag/
 │   ├── .env                              # Environment file specifically for notebook-related configurations (API keys, credentials)
 │   └── vector_Indexing_.ipynb            # Notebook for vectorizing data and indexing it into the semantic search system (Pinecone)
 ├── docker-compose.yaml                   # Primary Docker Compose file to orchestrate multi-container setups, including app, database, and Grafana
-├── prefect_ingest.py                     # Duplicate of the workflow orchestration script (kept in the root for easier access during testing)
 ├── README.md                             # Project documentation with detailed instructions on usage, setup, and project purpose
 ├── requirements.txt                      # Python dependencies for the entire project (ensuring the environment is consistent across machines)
 └── test.py                               # Standalone test script covering various components, including ingestion, database interactions, and the API
