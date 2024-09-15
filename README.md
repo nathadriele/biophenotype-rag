@@ -4,7 +4,7 @@
 
 ![app](https://github.com/user-attachments/assets/38ac1d64-2eaf-436a-8c9d-e7c3eec72fae)
 
-You can explore and interact with the Bio-Phenotype by accessing the app through the following link: https://dry-recipe-9383.ploomberapp.io.
+📌 You can explore and interact with the Bio-Phenotype by accessing the app through the following link: https://dry-recipe-9383.ploomberapp.io.
 
 ## 🧬 Project Overview 
 This project, **Phenotype RAG**, was developed as the final assignment for the LLM Zoomcamp. It implements a Retrieval-Augmented Generation (RAG) system that intelligently answers questions related to phenotypes by utilizing both a knowledge base and large language models (LLMs). The system is designed to assist with queries about phenotypes in fields such as genetics, evolutionary biology, and medical diagnostics. By integrating retrieval and generation capabilities, the project provides precise and contextually accurate information, making it a powerful tool for phenotype-related research and clinical applications.
@@ -85,7 +85,7 @@ phenotype-rag/
 ## 🧬 Phenotype Dataset
 The dataset used for this project contains questions and answers about phenotypes, with a focus on genetic research, evolutionary biology, and medical diagnostics. It explores how phenotypic traits relate to cognitive function, disease susceptibility, and treatment outcomes, highlighting the role of phenotyping in personalized medicine. The dataset also covers the impact of traits on aging, chronic diseases, and mental health disorders. Phenotypic trait analysis is crucial in understanding genetic predispositions, environmental adaptations, and evolutionary processes. This resource supports the development of diagnostic tools, therapeutic strategies, and health interventions by linking observable traits to genetic and environmental factors. Additionally, it is valuable for research in agricultural phenotypes, such as plant growth and disease resistance.
 
-### Some Questions and Answers: 
+### 📝 Some Questions and Answers
 ![image](https://github.com/user-attachments/assets/9340d71a-9c3f-4013-9931-f8c904f0ed7a)
 
 ## 🧬 Project Execution Locally
