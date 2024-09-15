@@ -1,4 +1,7 @@
-# Phenotype RAG: Genetic Insights
+# Phenotype RAG
+
+![ae52518a-bcb3-454c-aa41-b597394eeb19](https://github.com/user-attachments/assets/8ecee512-9ebe-427b-85fb-0dc9fe11d683)
+
 
 ![app](https://github.com/user-attachments/assets/38ac1d64-2eaf-436a-8c9d-e7c3eec72fae)
 
