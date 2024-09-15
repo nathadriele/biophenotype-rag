@@ -1,8 +1,10 @@
 ![Phenotype RAG Bio-Phenotype Insights Assistant](https://github.com/user-attachments/assets/af61c859-7f99-421b-b353-03b72e8b4fa6)
 
-# 🤖 Phenotype RAG: Bio-Phenotype Insights Assistant
+# 🤖🧬 Phenotype RAG: Bio-Phenotype Insights Assistant
 
 ![app](https://github.com/user-attachments/assets/38ac1d64-2eaf-436a-8c9d-e7c3eec72fae)
+
+You can explore and interact with the Bio-Phenotype by accessing the app through the following link: https://dry-recipe-9383.ploomberapp.io.
 
 ## 🧬 Project Overview 
 This project, **Phenotype RAG**, was developed as the final assignment for the LLM Zoomcamp. It implements a Retrieval-Augmented Generation (RAG) system that intelligently answers questions related to phenotypes by utilizing both a knowledge base and large language models (LLMs). The system is designed to assist with queries about phenotypes in fields such as genetics, evolutionary biology, and medical diagnostics. By integrating retrieval and generation capabilities, the project provides precise and contextually accurate information, making it a powerful tool for phenotype-related research and clinical applications.
