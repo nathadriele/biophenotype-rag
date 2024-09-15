@@ -69,7 +69,9 @@ phenotype-rag/
 │       └── grafana_datasources.yaml      # Configuration file that defines the data sources Grafana will connect to PostgreSQL
 ├── images/                               # Directory for storing project-related images and screenshots
 │   ├── app.png                           # Screenshot of the Streamlit app's interface
-│   └── grafana.png                       # Screenshot of the Grafana monitoring dashboard, displaying key metrics
+│   ├── grafana.png                       # Screenshot of the Grafana monitoring dashboard, displaying key metrics
+│   ├── gloq.png                          # Screenshot of Groq AI acceleration with integrated API Keys
+│   └── pinecone.png                      # Screenshot of Pinecone vector database powering semantic and similarity searches
 ├── notebook/                             # Directory containing Jupyter notebooks for exploratory data analysis (EDA) and model experimentation
 │   ├── .env                              # Environment file specifically for notebook-related configurations (API keys, credentials)
 │   └── vector_Indexing_.ipynb            # Notebook for vectorizing data and indexing it into the semantic search system (Pinecone)
