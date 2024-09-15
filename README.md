@@ -177,7 +177,7 @@ streamlit run main.py
 
 
 ## 🧬 Contribution of the Phenotype RAG Application
-The **Phenotype RAG** enhances research and practice in genetics and medical diagnostics by integrating retrieval and generation of phenotype information. It facilitates efficient access to complex data, supports accurate diagnostics, and provides a valuable educational tool. With flexible architecture, the application improves interaction with large volumes of data and fosters innovation through a collaborative and accessible approach for the community.
+The **Phenotype RAG: Bio-Phenotype Insights Assistant** enhances research and practice in genetics and medical diagnostics by integrating retrieval and generation of phenotype information. It facilitates efficient access to complex data, supports accurate diagnostics, and provides a valuable educational tool. With flexible architecture, the application improves interaction with large volumes of data and fosters innovation through a collaborative and accessible approach for the community.
 
 ## More Information
 This project was developed as the final assignment for the **LLM Zoomcamp** course.
