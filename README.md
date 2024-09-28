@@ -2,7 +2,7 @@
 
 # 🤖🧬 Phenotype RAG: Bio-Phenotype Insights Assistant
 
-![app](https://github.com/user-attachments/assets/38ac1d64-2eaf-436a-8c9d-e7c3eec72fae)
+https://github.com/user-attachments/assets/ea5a7935-fc04-4c2b-8656-309de25a7d29
 
 📌 You can explore and interact with the Bio-Phenotype by accessing the app through the following link: https://dry-recipe-9383.ploomberapp.io.
 
@@ -179,6 +179,8 @@ streamlit run main.py
 
 ## 🧬 Contribution of the Phenotype RAG Application
 The **Phenotype RAG: Bio-Phenotype Insights Assistant** enhances research and practice in genetics and medical diagnostics by integrating retrieval and generation of phenotype information. It facilitates efficient access to complex data, supports accurate diagnostics, and provides a valuable educational tool. With flexible architecture, the application improves interaction with large volumes of data and fosters innovation through a collaborative and accessible approach for the community.
+
+![app](https://github.com/user-attachments/assets/38ac1d64-2eaf-436a-8c9d-e7c3eec72fae)
 
 ## More Information
 This project was developed as the final assignment for the **LLM Zoomcamp** course.
