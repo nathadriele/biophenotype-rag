@@ -1,18 +1,18 @@
 ![Phenotype RAG Bio-Phenotype Insights Assistant](https://github.com/user-attachments/assets/af61c859-7f99-421b-b353-03b72e8b4fa6)
 
-# 🤖🧬 Phenotype RAG: Bio-Phenotype Insights Assistant
+# Phenotype RAG: Bio-Phenotype Insights Assistant
 
 https://github.com/user-attachments/assets/ea5a7935-fc04-4c2b-8656-309de25a7d29
 
-📌 You can explore and interact with the Bio-Phenotype by accessing the app through the following link: https://dry-recipe-9383.ploomberapp.io.
+You can explore and interact with the Bio-Phenotype by accessing the app through the following link: https://dry-recipe-9383.ploomberapp.io.
 
-## 🧬 Project Overview 
+## Project Overview 
 This project, **Phenotype RAG**, was developed as the final assignment for the LLM Zoomcamp. It implements a Retrieval-Augmented Generation (RAG) system that intelligently answers questions related to phenotypes by utilizing both a knowledge base and large language models (LLMs). The system is designed to assist with queries about phenotypes in fields such as genetics, evolutionary biology, and medical diagnostics. By integrating retrieval and generation capabilities, the project provides precise and contextually accurate information, making it a powerful tool for phenotype-related research and clinical applications.
 
-## 🧬 Problem Description
+## Problem Description
 Phenotyping is essential in fields such as genetics, evolutionary biology, and medical diagnostics, enabling researchers and clinicians to analyze observable traits shaped by genetic and environmental factors. However, the sheer volume and complexity of phenotype data pose significant challenges in efficiently accessing and retrieving relevant information. This project tackles these challenges by developing an intelligent assistant designed to answer complex phenotype-related queries. Utilizing Retrieval-Augmented Generation (RAG) techniques, the system integrates the reasoning capabilities of large language models (LLMs) with the accuracy of a curated knowledge base, enhancing the accessibility and precision of phenotype information for researchers, healthcare professionals, and educators.
 
-## 🧬 Project Objectives
+## Project Objectives
 The **Phenotype RAG** project aims to achieve the following objectives:
 - **1. Enhance Data Retrieval**: Implement a Retrieval-Augmented Generation (RAG) system to efficiently access and retrieve accurate information about phenotypes from a comprehensive knowledge base.
 - **2. Improve Query Accuracy**: Utilize advanced language models to reformulate and optimize queries, ensuring that the answers provided are contextually relevant and precise.
@@ -20,8 +20,8 @@ The **Phenotype RAG** project aims to achieve the following objectives:
 - **4. Ensure Scalability and Flexibility**: Develop a system with a flexible architecture that can integrate with various tools and adapt to different research needs, promoting scalability and adaptability in diverse applications.
 - **5. Foster Collaboration**: Make the project's code and documentation available to the community, encouraging collaborative development and knowledge sharing to advance the field.
 
-## 🧬 Technologies and Tools Used
-### ⚗️ Key Technologies
+## Technologies and Tools Used
+### Key Technologies
 
 - **Anaconda**: Used for managing dependencies and environment configurations.
 - **Docker**: Containerizes the application for easy deployment and consistent execution across different platforms.
@@ -29,21 +29,21 @@ The **Phenotype RAG** project aims to achieve the following objectives:
 - **Streamlit**: Offers a user-friendly interface for interacting with the **Phenotype RAG** system.
 - **Prefect**: Orchestrates data ingestion workflows to ensure smooth and automated processes.
 
-## 🧬 LLMs Used
+## LLMs Used
 - **gemma2-9b-it**: Utilized for question reformulation, optimizing queries for better understanding.
 - **mixtral-8x7b-32768**: Powers the retrieval-augmented generation by processing large volumes of text and delivering more contextually accurate answers.
 - **all-MiniLM-L6-v2**: Handles embedding generation and semantic search, allowing for precise query-to-answer matching.
 - **Groq**: Integrates with the system for efficient vector processing during the search phase.
 - **Pinecone**: Manages vector indexing and provides fast, scalable retrieval of information using semantic search.
 
-### ⚗️ Other Tools Used for Development
+### Other Tools Used for Development
 - **Pytest**: Ensures code reliability through unit and integration tests.
 - **Git**: Version control for tracking changes and collaboration.
 - **Visual Studio Code**: Integrated development environment (IDE) for writing and debugging code.
 - **Jupyter Notebook**: Facilitates exploratory data analysis and preprocessing through interactive notebooks.
 - **PostgreSQL**: Relational database used for storing and querying structured data.
 
-## 🧬 Project Structure
+## Project Structure
 The project is organized into the following directories and files:
 
 ```py
@@ -81,14 +81,14 @@ phenotype-rag/
 └── test.py                               # Standalone test script covering various components, including ingestion, database interactions, and the API
 ```
 
-## 🧬 Phenotype Dataset
+## Phenotype Dataset
 The dataset used for this project contains questions and answers about phenotypes, with a focus on genetic research, evolutionary biology, and medical diagnostics. It explores how phenotypic traits relate to cognitive function, disease susceptibility, and treatment outcomes, highlighting the role of phenotyping in personalized medicine. The dataset also covers the impact of traits on aging, chronic diseases, and mental health disorders. Phenotypic trait analysis is crucial in understanding genetic predispositions, environmental adaptations, and evolutionary processes. This resource supports the development of diagnostic tools, therapeutic strategies, and health interventions by linking observable traits to genetic and environmental factors. Additionally, it is valuable for research in agricultural phenotypes, such as plant growth and disease resistance.
 
-### 📝 Some Questions and Answers
+### Some Questions and Answers
 ![image](https://github.com/user-attachments/assets/9340d71a-9c3f-4013-9931-f8c904f0ed7a)
 
-## 🧬 Project Execution Locally
-### ⚗️ Pre-requisites
+## Project Execution Locally
+### Pre-requisites
 Ensure the following are installed on your machine:
 
 - Anaconda (latest version)
@@ -96,7 +96,7 @@ Ensure the following are installed on your machine:
 - PostgreSQL (latest version)
 - Grafana (latest version)
 
-### ⚗️ Environment Setup
+### Environment Setup
 1. Clone the repository:
    
 ```py
@@ -117,14 +117,14 @@ conda activate bio-phenotype
 pip install -r requirements.txt
 ```
 
-## 🧬 Data Exploration and Preprocessing
+## Data Exploration and Preprocessing
 - Start the `vector_Indexing_.ipynb` notebook with **Jupyter**:
   
 ```py
 jupyter notebook
 ```
 
-## 🧬 Running the Application
+## Running the Application
 To run the application, you will need access keys (API Key) for both **GroqCloud** and **Pinecone**. You will create and substitute them, as well as create an Index in **Pinecone**. You will need accounts on both platforms.
 
 ### Step 1: Create API Key on GroqCloud
@@ -166,7 +166,7 @@ To run the application locally, you may need to adjust the configurations in the
 streamlit run main.py
 ```
 
-## 🧬 Monitoring and Performance Metrics
+## Monitoring and Performance Metrics
 ![grafana](https://github.com/user-attachments/assets/8027f204-6112-4cb5-99f0-f2cf07a039a1)
 
 **Grafana** is used to monitor performance, and the image displays a dashboard configured with key performance metrics. In this example, it is evident:
@@ -177,7 +177,7 @@ streamlit run main.py
 - **Distribution of Questions and Answers**: The average question length, and the average response length is significantly higher, at 161 characters. This highlights the tendency for longer responses compared to the questions.
 
 
-## 🧬 Contribution of the Phenotype RAG Application
+## Contribution of the Phenotype RAG Application
 The **Phenotype RAG: Bio-Phenotype Insights Assistant** enhances research and practice in genetics and medical diagnostics by integrating retrieval and generation of phenotype information. It facilitates efficient access to complex data, supports accurate diagnostics, and provides a valuable educational tool. With flexible architecture, the application improves interaction with large volumes of data and fosters innovation through a collaborative and accessible approach for the community.
 
 ![app](https://github.com/user-attachments/assets/38ac1d64-2eaf-436a-8c9d-e7c3eec72fae)
